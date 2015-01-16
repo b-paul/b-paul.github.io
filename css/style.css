@@ -50,11 +50,27 @@ table {
 /* My css rules */
 
 body {
-  font-family: sans-serif;
+  font-family: Volkorn, Georgia, serif;
+  font-size: 1.5rem;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
-  margin-bottom: .75rem;
+  margin-bottom: .75em;
+}
+
+label {
+  cursor: pointer;
+}
+
+a {
+  font-style: italic;
+  color: #313F58;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #BBB;
 }
 
 #cover {
@@ -62,16 +78,22 @@ p {
   top: 0;
   width: 100vw;
   height: 100vh;
-  background: url(../images/cover-image.jpeg) no-repeat center center;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, .3),
+      rgba(0, 0, 0, .3)),
+    url(../images/cover.jpeg) no-repeat center 0;
   background-size: cover;
   z-index: -1;
-  color: white;
+  color: #F2EDE2;
 }
 
 .intro {
   position: absolute;
   width: 100%;
-  top: 30%;
+  font-size: 1.8em;
+  font-family: Raleway, Tahoma, sans-serif;
+  text-shadow: .02em .06em .16em black;
 }
 
 .intro span {
@@ -80,31 +102,240 @@ p {
 }
 
 .myname {
-  font-size: 3em;
+  font-size: 1.2em;
+  margin-top: 30vh;
+  text-transform: uppercase;
+  letter-spacing: .1em;
 }
 
 .is {
-  font-size: 2em;
-  margin-top: 1.25rem;
+  font-family: Volkorn, Georgia, serif;
+  margin: .25em 0 .1em 0;
+  font-style: italic;
 }
 
 .name {
-  font-size: 6em;
-  margin-top: 1.25rem;
+  font-size: 2.6em;
+  text-transform: uppercase;
+  letter-spacing: .03em;
 }
 
-#title {
+#portfolio {
+  position: relative;
+  top: 100vh;
+  min-height: 100vh;
+  margin-top: 6em;
+  box-sizing: border-box;
+}
+
+#work {
+  padding-top: 5em;
+}
+
+#portfolio, #work {
+  background: #F2EDE2;
+  width: 100%;
+}
+
+#portfolio::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -10em;
+  height: 10em;
+  background: linear-gradient(
+    rgba(242, 237, 226, 0),
+    rgba(242, 237, 226, .7) 50%,
+    rgba(242, 237, 226, .9) 80%,
+    rgba(242, 237, 226, 1));
+}
+
+#portfolio section, #work section, #site-footer section {
+  max-width: 35em;
+  margin: auto;
+  padding: 0 1em;
+}
+
+.section-heading {
+  font-family: Raleway, Tahoma, sans-serif;
+  font-size: 1.4em;
+  margin-top: .75em;
+  margin-bottom: .5em;
+  color: #212230;
+}
+
+.work-filters, .work-thumbnails {
+  text-align: center;
+}
+
+.work-filters li {
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 1em 2em;
+}
+
+.work-thumbnails li {
+  display: inline-block;
+  position: relative;
+  width: 24rem;
+  height: 18rem;
+  margin: 1rem;
+}
+
+.work-thumbnails a {
+  display: block;
+  font-size: 1.3em;
+  font-style: normal;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-shadow: .06em .06em .05em black;
+}
+
+.work-thumbnails h4 {
+  position: absolute;
+  font-size: 1.2em;
+  top: 0;
+  padding: .75em;
+}
+
+.work-thumbnails label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: .75em;
+  font-family: Raleway, Tahoma, sans-serif;
+  font-size: .9em;
+  text-align: right;
+}
+
+#karma-clone {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, .6),
+      rgba(0, 0, 0, .6)),
+    url(../images/karma-screenshot.png) no-repeat center 0;
+  background-size: cover;
+}
+
+#about-me {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, .6),
+      rgba(0, 0, 0, .6)),
+    url(../images/aboutme-screenshot.png) no-repeat center 0;
+  background-size: cover;
+}
+
+#qna .question, .footer-heading, .links-heading {
+  font-family: Raleway, Tahoma, sans-serif;
+  margin-top: .8em;
+  margin-bottom: .2em;
+}
+
+#qna .question, .work-filters {
+  color: #313F58;
+}
+
+.project>*:first-child {
+  clear: both;
+}
+
+.project-screenshot {
+  width: 100%;
+  margin-bottom: 2em;
+  float: left;
+}
+
+#site-footer {
+  font-family: Volkorn, Georgia, serif;
+  line-height: 1.3em;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, .3),
+      rgba(0, 0, 0, .3)),
+    url(../images/cover.jpeg) no-repeat center bottom;
+  padding: 3em;
+  margin-top: 4em;
+  color: #F2EDE2;
+}
+
+#site-footer a, .links a {
+  font-weight: normal;
+  color: inherit;
+}
+
+#navigation {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  background: white;
-  border-bottom: 1px solid #555;
+  color: #F2EDE2;
 }
 
+#navigation::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5em;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, .3),
+      rgba(0, 0, 0, .3)),
+    url(../images/cover.jpeg) no-repeat center 0;
+  background-size: auto 100vh;
+}
+
+#navigation .back {
+  color: white;
+  position: absolute;
+  top: .75em;
+  left: .75em;
+  font-size: 2em;
+}
+
+.links {
+  position: fixed;
+  bottom: -100vh;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 18em;
+  max-height: 100vh;
+  margin: auto;
+  padding: 2rem 2rem;
+  line-height: 1.3em;
+  font-size: 2em;
+  text-align: center;
+  color: #F2EDE2;
+  overflow: hidden scroll;
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.links>:first-child::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 1em;
+  right: 1em;
+  height: 200%;
+  background: #212230;
+  opacity: .8;
+  z-index: -1;
+  border-radius: 1rem;
+}
 
 /* This trick for hiding links without JavaScript was devised by Austin Wulf:
-http://www.sitepoint.com/pure-css-off-screen-navigation-menu/ */
+
+http://www.sitepoint.com/pure-css-off-screen-navigation-menu/
+
+We still need to use JS to make sure the links re-hide if the user clicks-off */
+
+#links-toggle:checked~.links {
+  bottom: 0;
+}
 
 #links-toggle {
   position: absolute;
@@ -114,40 +345,41 @@ http://www.sitepoint.com/pure-css-off-screen-navigation-menu/ */
 #links-toggle+label {
   display: block;
   position: absolute;
-  top: .5rem;
-  right: .5rem;
-  width: 2rem;
-  height: 2rem;
-  background-color: white;
-  background: url(../images/icon-share.svg) no-repeat center center;
+  top: .75em;
+  right: .75em;
+  font-size: 2em;
   background-size: contain;
 }
 
-#links-toggle~.links {
-  display: none;
+@media screen and (orientation: landscape) {
+  #navigation::before, #site-footer  {
+    background-size: 100% auto;
+  }
 }
 
-#links-toggle:checked~.links {
-  display: inherit;
+@media screen and (max-height: 25rem) {
+  .myname {
+    margin-top: 5rem;
+  }
 }
 
-/* We still need to use JS to make sure the links re-hide if the user clicks-off */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
 
-#portfolio {
-  background: white;
-  margin-top: 100vh;
-  padding: 1rem 1rem 3rem 1rem;
-  min-height: 100vh;
-  padding-top: 4rem;
-  box-shadow: 0rem 0rem 5rem white;
-}
+  body {
+    font-size: 1.2rem;
+  }
 
-.section-heading {
-  font-size: 1.4em;
-  margin-top: 1rem;
-  margin-bottom: .5rem;
-}
+  #navigation {
+    font-size: .8rem;
+  }
 
-#colophon {
-  background: white;
+  .links {
+    font-size: 1.7em;
+  }
+
+  .work-thumbnails li {
+    width: 18rem;
+    height: 15rem;
+  }
+
 }
