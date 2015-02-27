@@ -1,0 +1,335 @@
+/* GLOBAL VARIABLES */
+
+@s: Merriweather, Georgia, serif;
+@ss: "PT Sans", Tahoma, sans-serif;
+
+@gray: #BBB;
+@dgray: #444450;
+@blue: #0af;
+@lblue: #7df;
+@llblue: #f0faff;
+
+/* MIXINS */
+
+.blue-link {
+  background-color: @blue;
+  color: white;
+
+  &:hover {
+    background-color: @lblue;
+  }
+}
+
+.white-link {
+   background-color: white;
+  color: @dgray;
+
+  &:hover {
+    background-color: @llblue;
+    color: black;
+  }
+ }
+
+.clearfix {
+  display: block;
+
+  &::after {
+    display: block;
+    content: " ";
+    clear: both;
+  }
+}
+
+.rule-before {
+  &::before {
+    content: " ";
+    display: block;
+    margin: 0 auto 1em;
+    width: 90%;
+    height: 0;
+    border-top: solid 1px @gray;
+  }
+}
+
+/* STYLES */
+
+body {
+  font-family: @s;
+  font-size: .9em;
+  line-height: 1.4em;
+  margin: 0;
+}
+
+a {
+  .blue-link;
+  padding: .05em .3em .03em .27em;
+  white-space: nowrap;
+  border-radius: .2em;
+  text-decoration: none;
+  transition: background-color .3s ease;
+  font-size: 1.08em;
+  font-family: @ss;
+}
+
+p {
+  margin-top: 0;
+}
+
+#cover {
+  position: relative;
+  background-image: url('../images/cover.jpeg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 30em;
+  max-height: 70vh;
+  text-align: center;
+
+  h2 {
+    position: absolute;
+    bottom: .7em;
+    left: 0;
+    right: 0;
+    font-family: @ss;
+    color: white;
+    letter-spacing: .04em;
+    font-size: 4em;
+    margin: 0;
+    text-shadow: .1em 0 .15em black;
+
+    img {
+      display: block;
+      margin: .5em auto -5em;
+      height: 6em;
+      border: .3em solid @gray;
+      background-color: @dgray;
+      box-shadow: 0 0 .2em black;
+    }
+  }
+}
+
+#portfolio, #project, #site-footer {
+  width: 48em;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+#project {
+  margin-top: 18.5em;
+}
+
+.section-heading {
+  font-family: @ss;
+  font-size: 1.4em;
+  margin-bottom: .5em;
+}
+
+#work {
+  .clearfix;
+  width: 100%;
+
+  ul {
+    .clearfix;
+    .rule-before;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+  }
+}
+
+.project {
+  display: block;
+  float: left;
+  width: 100%;
+
+  a {
+    .white-link;
+    .clearfix;
+    width: 100%;
+    padding: 1em 0;
+  }
+}
+
+.project-title {
+  text-align: center;
+}
+
+.thumbnail {
+  position: relative;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 .5em @gray;
+  text-align: center;
+  overflow: hidden;
+  background-color: white;
+  transition: box-shadow .6s ease;
+
+  &:hover {
+    box-shadow: 0 0 0.7em @dgray;
+  }
+
+  &::before {
+    content: " ";
+    display: block;
+    padding-top: 100%;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: -100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+#contact {
+  min-height: 75vh;
+
+  ul {
+    .clearfix;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    margin-top: 0;
+
+    li {
+      display: block;
+      float: left;
+      width: 25%;
+      text-align: center;
+
+      a {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 4em;
+        height: 4em;
+        line-height: 4em;
+        border-radius: 50%;
+
+        img {
+          vertical-align: middle;
+        }
+
+        #github-logo {
+          position: relative;
+          top: .3em;
+          width: 3.5em;
+        }
+
+        #twitter-logo {
+          width: 2.5em;
+        }
+
+        #gplus-logo {
+          width: 3.15em;
+        }
+
+        #linkedin-logo {
+          position: relative;
+          bottom: 2px;
+          width: 3.25em;
+        }
+      }
+    }
+  }
+
+  form {
+    margin: 2em 0;
+    background-image: url('../images/cover.jpeg');
+    background-size: cover;
+    padding: 2em;
+    border-radius: .8em;
+
+    label, input, textarea, button {
+      display: block;
+      box-sizing: border-box;
+      font-size: 1em;
+      width: 100%;
+      margin: 1em 0;
+      border-radius: .8em;
+      padding: .4em;
+      border: none;
+      background-color: white;
+    }
+
+    label {
+      background: none;
+      color: white;
+      margin: -.5em 0 -1em;
+      font-size: 1.1em;
+    }
+
+    button {
+      .blue-link;
+      line-height: 1.6em;
+      margin: 1.8em 0 0;
+    }
+  }
+}
+
+#site-footer {
+  .rule-before;
+  min-height: 25vh;
+  margin-top: 10em;
+  padding-bottom: 4em;
+  box-sizing: border-box;
+}
+
+#links {
+  background-color: white;
+  max-width: 60em;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 1.2em;
+  left: 1.2em;
+  right: 1.2em;
+  box-shadow: .05em .2em .3em black;
+  height: 2.1em;
+  transition: all .6s ease;
+
+  a {
+    .white-link;
+    border-radius: 0;
+    display: block;
+    float: left;
+    width: 25%;
+    height: 100%;
+    line-height: 2em;
+    box-sizing: border-box;
+    border-left: solid 1px @gray;
+    text-align: center;
+
+    &.current {
+      .blue-link
+    }
+  }
+
+  &.docked {
+    bottom: 0;
+
+    a {
+      opacity: .5;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .project {
+    width: 33%;
+    
+    a {
+      width: 80%;
+      padding: 1em 9%;
+    }
+  }
+}

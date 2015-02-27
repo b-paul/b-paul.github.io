@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>B. Paul Anderson, Web Developer</title>
+  <link href=" //fonts.googleapis.com/css?family=PT+Sans:700|Merriweather"
+    rel="stylesheet" type="text/css">
+  <link href="../css/style.css"
+    rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <div id="cover">
+    <h2>
+      Landing page clone
+      <img src="image.png" alt="Clone based on yourkarma.com">
+    </h2>
+  </div>
+
+  <article id="project">
+    <p>As an exercise in using semantic HTML and CSS to achieve a pre-defined
+    look, I created a clone of the landing page at yourkarma.com, as it
+    existed around August of 2014. This was a fun exercise, and instructive
+    to the way I buld sites today.</p>
+  </article>
+
+  <footer id="site-footer">
+    <p>This site hand-coded with pride in North Richland Hills. ©2015 B. Paul
+    Anderson</p>
+    <h3 class="section-heading">Image credit:</h4>
+    <p class="image-credit"><a target="_blank"
+    href="https://www.flickr.com/photos/schluesselbein/3153341075">
+    Dallas Skyline from Deep Ellum</a> by <a target="_blank"
+    href="https://www.flickr.com/photos/schluesselbein/"> John McStravick;</a>
+    licensed under <a target="_blank"
+    href="https://creativecommons.org/licenses/by/2.0/">CC Attribution 2.0
+    Generic</a></p>
+  </footer>
+
+  <nav id="links" style="max-width: 25em;">
+    <a href="../" style="width:100%;">Home</a>
+  </nav>
+
+  <script type="text/javascript">
+    // Dock the nav element to the bottom of the window on scroll
+    var nav = document.getElementById('links');
+    document.addEventListener('scroll', function() {
+      if (window.scrollY <= 0) { nav.classList.remove('docked'); }
+      else { nav.classList.add('docked'); }
+    });
+  </script>
+</body>
+</html>

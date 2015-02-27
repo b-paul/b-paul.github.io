@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>B. Paul Anderson, Web Developer</title>
+  <link href=" //fonts.googleapis.com/css?family=PT+Sans:700|Merriweather"
+    rel="stylesheet" type="text/css">
+  <link href="../css/style.css"
+    rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <div id="cover">
+    <h2>
+      Office Hours Announcer
+      <img src="image.png" alt="A Google Hangouts extension for Thinkful">
+    </h2>
+  </div>
+
+  <article id="project">
+    <p>Thinkful.com mentors wanted a way to easily remind students when online
+    office hours were beginning, and how to join them. Using three separate APIs
+    to access the required services, I created an integration that allows a
+    mentor in a Google Hangouts window to load data from Google Spreadsheets,
+    then to post relevant messages based on that data to the student Slack
+    channels. As a useful feature, the app can automatically repeat its
+    announcement every fifteen minutes while office hours is going on.</p>
+  </article>
+
+  <footer id="site-footer">
+    <p>This site hand-coded with pride in North Richland Hills. ©2015 B. Paul
+    Anderson</p>
+    <h3 class="section-heading">Image credit:</h4>
+    <p class="image-credit"><a target="_blank"
+    href="https://www.flickr.com/photos/schluesselbein/3153341075">
+    Dallas Skyline from Deep Ellum</a> by <a target="_blank"
+    href="https://www.flickr.com/photos/schluesselbein/"> John McStravick;</a>
+    licensed under <a target="_blank"
+    href="https://creativecommons.org/licenses/by/2.0/">CC Attribution 2.0
+    Generic</a></p>
+  </footer>
+
+  <nav id="links" style="max-width: 25em;">
+    <a href="../" style="width:100%;">Home</a>
+  </nav>
+
+  <script type="text/javascript">
+    // Dock the nav element to the bottom of the window on scroll
+    var nav = document.getElementById('links');
+    document.addEventListener('scroll', function() {
+      if (window.scrollY <= 0) { nav.classList.remove('docked'); }
+      else { nav.classList.add('docked'); }
+    });
+  </script>
+</body>
+</html>
