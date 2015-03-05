@@ -216,7 +216,10 @@
           var newScroll, newDist;
           newScroll = coef * Math.pow(frameCt, 1/3) + startPoint;
           newDist = target - newScroll;
-          if (dist * newDist <= 0) { document.body.scrollTop = target; return; }
+          if (!newDist || dist * newDist <= 0) {
+            document.body.scrollTop = target;
+            return;
+          }
           window.requestAnimationFrame(scroll.bind(this, ++frameCt, newDist));
           document.body.scrollTop = newScroll;
         }(0, distance));
