@@ -8,13 +8,22 @@
 # Site settings
 title: Paul Anderson, Web Developer
 email: paul@andersonpaul.com
-description: > # this means to ignore newlines until "baseurl:"
-  The personal site and portfolio of B. Paul Anderson, a front-end web developer
-  focusing on modern JavaScript, abstraction, and simplicity
+description: >
+  Thank you for visiting. Please feel free to use any of the methods listed here
+  to get in touch with me. I am currently open to new work opportunities, and I
+  would love to hear about what you are doing.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://www.andersonpaul.com" # the base hostname & protocol for your site
+personal_name: Paul Anderson
 twitter_username: bpaulanderson
 github_username:  b-paul
+collections:
+  - skills
+  - projects
 
 # Build settings
 markdown: kramdown
+sass:
+  load_paths:
+    - _includes/lib/bourbon/app/assets/stylesheets/
+    - _includes/lib/neat/app/assets/stylesheets/
