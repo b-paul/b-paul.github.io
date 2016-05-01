@@ -4,20 +4,49 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <p class="intro">I'm a front-end web developer with a focus on modern
+  JavaScript workflows and tooling, and a yen for functional programming.</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <h1 class="section-heading">Skillset</h1>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  {% for skill in site.skills %}
+    <p class="skill" data-powertip="{{ skill.content | escape }}">
+      <strong>{{ skill.title }}:</strong>
+      <em>{{ skill.proficiency }}</em>
+    </p>
+  {% endfor %}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <h1 class="section-heading">Projects</h1>
+
+  {% for proj in site.projects %}
+    <div class="project">
+      <div class="project-images">
+        {% for image in proj.images %}
+          <img src="{{ image | prepend: site.baseurl }}">
+        {% endfor %}
+      </div>
+      <ul class="relatedlinks">
+        <li>
+          <a href="{{ proj.github_repo_name | prepend: '/' | prepend: site.baseurl }}">
+            Demo
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/{{ site.github_username }}/{{ proj.github_repo_name }}">
+            Code
+          </a>
+        </li>
+      </ul>
+      <h2 class="project-heading">{{ proj.title }}</h2>
+      <ul class="techstack">
+        {% for tech in proj.tech %}
+          <li>{{ tech }}</li>
+        {% endfor %}
+      </ul>
+      {{ proj.content }}
+    </div>
+  {% endfor %}
+
+  <script src="scripts/main.js"></script>
 
 </div>

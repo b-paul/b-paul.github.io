@@ -3,20 +3,27 @@
 ---
 @charset "utf-8";
 
-
+@import "bourbon",
+        "neat";
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Alegreya", $georgia;
+$headings-font-family: "Alegreya Sans", $helvetica;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
+
 $spacing-unit:     30px;
+$small-spacing-unit: $spacing-unit / 3;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+
+$brand-color-dark: #3c0070;
+$brand-color:      lighten($brand-color-dark, 20%);
+$brand-color-light: lighten($brand-color-dark, 50%);
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -28,7 +35,9 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+// Neat lib variants on the above
+$max-width:        $content-width - $spacing-unit * 2;
+$gutter:           $spacing-unit;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -43,11 +52,185 @@ $on-laptop:        800px;
     }
 }
 
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
+@import "base",
         "layout",
-        "syntax-highlighting"
-;
+        "syntax-highlighting",
+        "powertip";
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headings-font-family;
+}
+
+a {
+    color: $brand-color;
+}
+
+a:hover, a:visited {
+    color: $brand-color-dark;
+}
+
+.wrapper {
+    @include outer-container;
+}
+
+.site-header {
+    font-family: $headings-font-family;
+    color: $background-color;
+    text-shadow: 0 2px 2px $grey-color-dark;
+    height: 250px;
+    background-image: url('../images/cover.jpg');
+    background-position: 50% 48%;
+    background-size: cover;
+    border-top: 4px solid $brand-color-dark;
+    border-bottom: 2px solid $brand-color-dark;
+
+    .wrapper {
+        position: relative;
+        height: 100%;
+    }
+
+    .wrapper:after {
+        content: 'Background © Daxis flic.kr/p/wu7kQY';
+        font-size: $small-font-size;
+        display: block;
+        position: absolute;
+        top: $small-spacing-unit;
+
+        @include media(min-width 700px) {
+            top: unset;
+            bottom: $small-spacing-unit;
+            right: $spacing-unit;
+        }
+    }
+
+    .site-title { /* nested for context; also extra specificity */
+        color: $background-color;
+        font-weight: $base-font-weight;
+        font-size: 28px;
+        line-height: 31px;
+        letter-spacing: 0;
+        display: block;
+        position: absolute;
+        bottom: $small-spacing-unit;
+
+        @include media(max-width 320px) {
+            width: 6em;
+        }
+    }
+}
+
+.site-nav a.menu-icon {
+    padding: 0;
+
+    svg {
+        margin-top: 50%;
+        transform: translate3d(0, -80%, 0);
+    }
+}
+
+.intro {
+    font-size: 115%;
+}
+
+.section-heading {
+    font-size: 29px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid $brand-color-dark;
+}
+
+.project {
+    margin-top: $spacing-unit;
+    border-bottom: 1px solid $brand-color;
+    box-shadow: 0 4px 6px -5px black;
+}
+
+.project-heading {
+    font-size: $base-font-size;
+    font-weight: bold;
+    margin: 0;
+}
+
+.techstack {
+    list-style: none;
+    line-height: 28px;
+    margin: 0 0 $small-spacing-unit 0;
+    font-size: $small-font-size;
+
+    li {
+        display: inline-block;
+        margin: 4px 4px;
+        padding: 1.25%;
+        line-height: 120%;
+        background-color: $grey-color-light;
+        border-radius: 5px;
+
+        @include media(min-width 4000px) {
+            padding: 2%;
+        }
+    }
+}
+
+.relatedlinks {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+}
+
+.site-footer {
+    background-color: $brand-color-dark;
+}
+
+.footer-col-wrapper {
+    font-family: $headings-font-family;
+    color: $background-color;
+
+    .icon > svg path {
+        fill: $background-color;
+    }
+
+    a, a:hover, a:visited, a:active {
+        color: $brand-color-light;
+    }
+
+}
+
+.footer-col {
+    @include span-columns(12);
+}
+
+.footer-col-3 {
+    font-size: $small-font-size;
+}
+
+@include media(min-width 450px) {
+    .footer-col-1, .footer-col-2 {
+        @include span-columns(6);
+    }
+
+    .footer-col-2 {
+        @include omega;
+    }
+
+    .footer-col-3 {
+        @include span-columns(12);
+    }
+}
+
+@include media(min-width 700px) {
+    .footer-col-1 {
+        @include span-columns(4);
+    }
+
+    .footer-col-2 {
+        @include span-columns(3);
+    }
+
+    .footer-col-3 {
+        @include span-columns(5);
+    }
+}

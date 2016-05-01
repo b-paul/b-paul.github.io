@@ -3,7 +3,7 @@
  */
 .site-header {
     border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 1px solid $grey-color-dark;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -172,6 +172,7 @@
 }
 
 .page-heading {
+    &:not(:first-child) { padding-top: 10px; }
     font-size: 20px;
 }
 
