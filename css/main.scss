@@ -18,6 +18,8 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 $small-spacing-unit: $spacing-unit / 3;
 
+$border-radius:    7px;
+
 $text-color:       #111;
 $background-color: #fdfdfd;
 
@@ -140,8 +142,51 @@ a:hover, a:visited {
 
 .project {
     margin-top: $spacing-unit;
-    border-bottom: 1px solid $brand-color;
-    box-shadow: 0 4px 6px -5px black;
+    background-color: lighten($grey-color, 15%);
+    border: 1px solid $brand-color;
+    border-radius: $border-radius;
+}
+
+.project-images {
+    display: flex;
+    justify-content: space-around;
+    padding: $small-spacing-unit 0;
+    box-shadow: inset 0 0 12px $grey-color-dark;
+
+    .project-image {
+        margin: $small-spacing-unit 16px;
+    }
+
+    img {
+        display: block;
+        max-height: 280px;
+        box-shadow: 0 5px 10px 0 transparentize($grey-color-dark, 0.5);
+    }
+}
+
+.project-description {
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    box-shadow: 0 4px 6px -5px $grey-color-dark;
+    padding: $small-spacing-unit;
+    background-color: $background-color;
+}
+
+.relatedlinks {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 3px;
+    background-color: $brand-color-dark;
+
+    li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+    a, a:hover, a:visited {
+        color: $background-color;
+    }
 }
 
 .project-heading {
@@ -162,22 +207,11 @@ a:hover, a:visited {
         padding: 1.25%;
         line-height: 120%;
         background-color: $grey-color-light;
-        border-radius: 5px;
+        border-radius: $border-radius;
 
         @include media(min-width 4000px) {
             padding: 2%;
         }
-    }
-}
-
-.relatedlinks {
-    list-style: none;
-    text-align: center;
-    margin: 0;
-
-    li {
-        display: inline-block;
-        margin: 0 20px;
     }
 }
 

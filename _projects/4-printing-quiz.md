@@ -4,6 +4,11 @@ github_repo_name: print-tech-quiz-app
 tech:
   - jquery
   - less
+images:
+  - /images/work/print-tech-quiz-app/0.png
+  - /images/work/print-tech-quiz-app/1.png
+  - /images/work/print-tech-quiz-app/2.png
+  - /images/work/print-tech-quiz-app/3.png
 ---
 
 I started my career in the printing industry, and I'll always retain my

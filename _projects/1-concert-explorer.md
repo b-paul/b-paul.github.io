@@ -9,6 +9,10 @@ tech:
   - angular ui router
   - google maps javascript api
   - bandsintown web api
+images:
+  - /images/work/concert-search/0.png
+  - /images/work/concert-search/1.png
+  - /images/work/concert-search/2.png
 ---
 
 Apps like BandsInTown and Songkick allow you to explore concerts you're likely

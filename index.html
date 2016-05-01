@@ -20,11 +20,15 @@ layout: default
 
   {% for proj in site.projects %}
     <div class="project">
-      <div class="project-images">
-        {% for image in proj.images %}
-          <img src="{{ image | prepend: site.baseurl }}">
-        {% endfor %}
-      </div>
+      {% if proj.images | length %}
+        <div class="project-images">
+          {% for image in proj.images %}
+            <div class="project-image">
+              <img src="{{ image | prepend: site.baseurl }}">
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
       <ul class="relatedlinks">
         <li>
           <a href="{{ proj.github_repo_name | prepend: '/' | prepend: site.baseurl }}">
@@ -37,13 +41,15 @@ layout: default
           </a>
         </li>
       </ul>
-      <h2 class="project-heading">{{ proj.title }}</h2>
-      <ul class="techstack">
-        {% for tech in proj.tech %}
-          <li>{{ tech }}</li>
-        {% endfor %}
-      </ul>
-      {{ proj.content }}
+      <div class="project-description">
+        <h2 class="project-heading">{{ proj.title }}</h2>
+        <ul class="techstack">
+          {% for tech in proj.tech %}
+            <li>{{ tech }}</li>
+          {% endfor %}
+        </ul>
+        {{ proj.content }}
+      </div>
     </div>
   {% endfor %}
 

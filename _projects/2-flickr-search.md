@@ -7,6 +7,9 @@ tech:
   - sass
   - webpack
   - flickr web api
+images:
+  - /images/work/flickr-searcher/0.png
+  - /images/work/flickr-searcher/1.png
 ---
 
 Flickr has an enormous photo-sharing community, and much of their data can be
