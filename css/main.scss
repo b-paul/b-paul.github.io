@@ -3,8 +3,8 @@
 ---
 @charset "utf-8";
 
-@import "bourbon",
-        "neat";
+@import "../_includes/lib/bourbon/app/assets/stylesheets/bourbon",
+        "../_includes/lib/neat/app/assets/stylesheets/neat";
 
 // Our variables
 $base-font-family: "Alegreya", $georgia;

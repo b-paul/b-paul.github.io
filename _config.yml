@@ -23,7 +23,3 @@ collections:
 
 # Build settings
 markdown: kramdown
-sass:
-  load_paths:
-    - _includes/lib/bourbon/app/assets/stylesheets/
-    - _includes/lib/neat/app/assets/stylesheets/
