@@ -23,3 +23,5 @@ collections:
 
 # Build settings
 markdown: kramdown
+exclude:
+  - resume.pages

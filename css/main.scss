@@ -122,9 +122,26 @@ a:hover, a:visited {
 }
 
 .site-nav {
-    float: none;
-    background-color: $brand-color-dark;
-    text-align: right;
+
+    @include media(min-width 700px) {
+        float: none;
+        background-color: $brand-color-dark;
+        text-align: center;
+
+        .wrapper {
+            padding: 0 15px;
+        }
+
+        .page-link {
+            color: $background-color;
+            font-size: 17px;
+            margin: 0 120px;
+        }
+    }
+
+    .wrapper {
+        padding: 2px;
+    }
 
     a.menu-icon {
         padding: 0;
@@ -136,10 +153,7 @@ a:hover, a:visited {
     }
 
     .page-link {
-        color: $background-color;
         font-family: $headings-font-family;
-        font-size: 17px;
-        margin: 0 50px;
     }
     line-height: 29px;
 }
