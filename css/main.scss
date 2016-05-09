@@ -121,13 +121,27 @@ a:hover, a:visited {
     }
 }
 
-.site-nav a.menu-icon {
-    padding: 0;
+.site-nav {
+    float: none;
+    background-color: $brand-color-dark;
+    text-align: right;
 
-    svg {
-        margin-top: 50%;
-        transform: translate3d(0, -80%, 0);
+    a.menu-icon {
+        padding: 0;
+
+        svg {
+            margin-top: 50%;
+            transform: translate3d(0, -80%, 0);
+        }
     }
+
+    .page-link {
+        color: $background-color;
+        font-family: $headings-font-family;
+        font-size: 17px;
+        margin: 0 50px;
+    }
+    line-height: 29px;
 }
 
 .intro {
