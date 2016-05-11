@@ -10,10 +10,11 @@ layout: default
   <h1 class="section-heading">Skillset</h1>
 
   {% for skill in site.skills %}
-    <p class="skill" data-powertip="{{ skill.content | escape }}">
-      <strong>{{ skill.title }}:</strong>
+    <div class="skill">
+      <strong class="skill-title">{{ skill.title }}:</strong>
       <em>{{ skill.proficiency }}</em>
-    </p>
+      {{ skill.content }}
+    </div>
   {% endfor %}
 
   <h1 class="section-heading">Projects</h1>
@@ -52,7 +53,4 @@ layout: default
       </div>
     </div>
   {% endfor %}
-
-  <script src="scripts/main.js"></script>
-
 </div>
