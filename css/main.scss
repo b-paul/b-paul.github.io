@@ -217,10 +217,15 @@ a:hover, a:visited {
     }
 }
 
-.project-heading {
+.contrib-heading, .project-heading {
     font-size: $base-font-size;
     font-weight: bold;
     margin: 0;
+}
+
+.contrib-reference {
+    font-size: 65%;
+    margin: 0 $small-spacing-unit;
 }
 
 .techstack {

@@ -16,6 +16,20 @@ layout: default
     </p>
   {% endfor %}
 
+  <h1 class="section-heading">Open Source</h1>
+
+  {% for contrib in site.contribs %}
+    <div class="contribution">
+      <h2 class="contribution-heading">
+        {{ contrib.title }}
+        <a class="contrib-reference" href="{{ contrib.reference_url }}">
+          view on GitHub
+        </a>
+      </h2>
+      {{ contrib.content }}
+    </div>
+  {% endfor %}
+
   <h1 class="section-heading">Projects</h1>
 
   {% for proj in site.projects %}

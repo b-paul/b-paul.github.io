@@ -19,6 +19,7 @@ twitter_username: bpaulanderson
 github_username:  b-paul
 collections:
   - skills
+  - contribs
   - projects
 
 # Build settings
