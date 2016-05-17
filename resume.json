@@ -1,0 +1,194 @@
+{
+  "name": "B. Paul Anderson",
+
+  "meta": {
+    "format": "FRESH@0.6.0"
+  },
+  "info": {
+    "label": "Web Developer",
+    "class": "Programmer",
+    "brief": "Passionate newly-minted developer with a front-end focus, experienced in JavaScript development both with and without MVC frameworks.",
+    "image": "B_Paul_Anderson.jpg"
+  },
+  "contact": {
+    "website": "andersonpaul.com",
+    "phone": "1-817-262-9258",
+    "email": "paul@andersonpaul.com"
+  },
+  "location": {
+    "address": "B. Paul Anderson\n3160 W Northgate Dr, #2017\nIrving, TX 75062",
+    "city": "Irving",
+    "region": "Texas",
+    "code": "75062",
+    "country": "US"
+  },
+  "social": [
+    {
+     "label": "GitHub",
+     "network": "GitHub",
+     "user": "b-paul",
+     "url": "https://github.com/b-paul"
+    },
+    {
+     "label": "Twitter",
+     "network": "Twitter",
+     "user": "bpaulanderson",
+     "url": "https://twitter.com/bpaulanderson"
+    },
+    {
+      "label": "LinkedIn",
+      "network": "LinkedIn",
+      "user": "B. Paul Anderson",
+      "url": "https://www.linkedin.com/in/b-paul-anderson"
+    }
+  ],
+  "education": {
+    "summary": "Formally educated in English and linguistics; retrained as a web developer through personal initiative.",
+    "level": "degree",
+    "degree": "BA",
+    "history": [
+      {
+        "institution": "The University of Texas at Arlington",
+        "title": "BA",
+        "studyType": "Bachelor",
+        "area": "Arts",
+        "url": "http://www.uta.edu/",
+        "end": "2009-05",
+        "grade": "3.75",
+        "summary": "Degree program in English with a minor in linguistics."
+      }
+    ]
+  },
+  "employment": {
+    "summary": "",
+    "history": [
+      {
+        "employer": "Thinkful",
+        "url": "http://thinkful.com/",
+        "position": "Student",
+        "summary": "Completed extended hands-on experience, working closely with a working engineer mentor to assemble and refine a portfolio of work that effectively demonstrates skill in web development.",
+        "start": "2015-12",
+        "end": "2016-04",
+        "keywords": [
+          "JavaScript", "JQuery", "CSS", "HTML5", "AngularJS", "MVC"
+        ]
+      },
+      {
+        "employer": "GotPrint",
+        "url": "http://gotprint.com/",
+        "position": "Quality Control Agent",
+        "summary": "Sole quality control agent for a production plant shipping 2,500 boxes of marketing materials per day.",
+        "start": "2012-03",
+        "keywords": [
+          "Python", "SQL", "Microsoft Excel", "Automation", "Training"
+        ],
+        "highlights": [
+          "Improved production quality, as measured by a 48% (41/mo to 21/mo) reduction in customer complaints during my tenure, by training teams to meet a consistent set of standards and providing active feedback through data.",
+          "Taught self to use Python and SQL in order to create programs that compiled quality data over time, eliminating a biweekly four-hour report generation process."
+        ]
+      },
+      {
+        "employer": "FedEx Office",
+        "url": "http://www.fedex.com/us/office/",
+        "position": "Lead Project Coordinator",
+        "summary": "Earned multiple promotions from retail customer service to final role as shift-leading project coordinator. Trained my team in client consultations and technical competencies.",
+        "start": "2008-06",
+        "end": "2012-02",
+        "keywords": [
+          "Adobe Creative Suite", "Customer Service", "Leadership", "Training"
+        ]
+      }
+    ]  
+  },
+  "skills": {
+    "sets": [
+      {
+        "name": "Front End Web",
+        "level": "advanced",
+        "skills": [
+          "JavaScript", "ES2015", "HTML5", "CSS", "AngularJS", "Node.js"
+        ]
+      },
+      {
+        "name": "Testing",
+        "level": "proficient",
+        "skills": [
+          "Mocha", "Jasmine", "Protractor", "Karma"
+        ]
+      },
+      {
+        "name": "Build Tools",
+        "level": "intermediate",
+        "skills": [
+          "Gulp", "Webpack"
+        ]
+      },
+      {
+        "name": "Source Control",
+        "level": "intermediate",
+        "skills": [
+          "Git", "GitHub collaboration"
+        ]
+      }
+    ],
+
+    "list": [
+      {
+        "name": "JavaScript",
+        "level": "advanced"
+      },
+      {
+        "name": "ES2015",
+        "level": "intermediate"
+      },
+      {
+        "name": "HTML5",
+        "level": "advanced"
+      },
+      {
+        "name": "CSS",
+        "level": "advanced"
+      },
+      {
+        "name": "AngularJS",
+        "level": "advanced"
+      },
+      {
+        "name": "Node.js",
+        "level": "proficient"
+      },
+      {
+        "name": "Mocha",
+        "level": "intermediate"
+      },
+      {
+        "name": "Jasmine",
+        "level": "proficient"
+      },
+      {
+        "name": "Protractor",
+        "level": "proficient"
+      },
+      {
+        "name": "Karma",
+        "level": "proficient"
+      },
+      {
+        "name": "Gulp",
+        "level": "intermediate"
+      },
+      {
+        "name": "Webpack",
+        "level": "intermediate"
+      },
+      {
+        "name": "Git",
+        "level": "intermediate"
+      },
+      {
+        "name": "GitHub collaboration",
+        "level": "proficient"
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+basics:
+  name: 'B. Paul Anderson'
+  label: 'Web Developer'
+  class: Programmer
+  summary: 'Passionate newly-minted developer with a front-end focus, experienced in JavaScript development both with and without MVC frameworks.'
+  website: andersonpaul.com
+  phone: 1-817-262-9258
+  email: paul@andersonpaul.com
+  picture: B_Paul_Anderson.jpg
+  location:
+    address: "B. Paul Anderson\n3160 W Northgate Dr, #2017\nIrving, TX 75062"
+    postalCode: '75062'
+    city: Irving
+    countryCode: US
+    region: Texas
+  profiles:
+    -
+      network: GitHub
+      username: b-paul
+      url: 'https://github.com/b-paul'
+    -
+      network: Twitter
+      username: bpaulanderson
+      url: 'https://twitter.com/bpaulanderson'
+    -
+      network: LinkedIn
+      username: 'B. Paul Anderson'
+      url: 'https://www.linkedin.com/in/b-paul-anderson'
+work:
+  -
+    company: Thinkful
+    website: 'http://thinkful.com/'
+    position: Student
+    startDate: 2015-12
+    endDate: 2016-04
+    summary: 'Completed extended hands-on experience, working closely with a working engineer mentor to assemble and refine a portfolio of work that effectively demonstrates skill in web development.'
+  -
+    company: GotPrint
+    website: 'http://gotprint.com/'
+    position: 'Quality Control Agent'
+    startDate: 2012-03
+    summary: 'Sole quality control agent for a production plant shipping 2,500 boxes of marketing materials per day.'
+    highlights:
+      - 'Improved production quality, as measured by a 48% (41/mo to 21/mo) reduction in customer complaints during my tenure, by training teams to meet a consistent set of standards and providing active feedback through data.'
+      - 'Taught self to use Python and SQL in order to create programs that compiled quality data over time, eliminating a biweekly four-hour report generation process.'
+  -
+    company: 'FedEx Office'
+    website: 'http://www.fedex.com/us/office/'
+    position: 'Lead Project Coordinator'
+    startDate: 2008-06
+    endDate: 2012-02
+    summary: 'Earned multiple promotions from retail customer service to final role as shift-leading project coordinator. Trained my team in client consultations and technical competencies.'
+education:
+  -
+    institution: 'The University of Texas at Arlington'
+    gpa: '3.75'
+    endDate: 2009-05
+    area: Arts
+    studyType: Bachelor
+skills:
+  -
+    name: 'Front End Web'
+    level: advanced
+    keywords:
+      - JavaScript
+      - ES2015
+      - HTML5
+      - CSS
+      - AngularJS
+      - Node.js
+  -
+    name: Testing
+    level: proficient
+    keywords:
+      - Mocha
+      - Jasmine
+      - Protractor
+      - Karma
+  -
+    name: 'Build Tools'
+    level: intermediate
+    keywords:
+      - Gulp
+      - Webpack
+  -
+    name: 'Source Control'
+    level: intermediate
+    keywords:
+      - Git
+      - 'GitHub collaboration'

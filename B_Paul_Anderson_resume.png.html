@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+        <title>B. Paul Anderson</title>
+        <style>
+            body {
+            	background: #fff;
+            	font: 15px 'Allegreya Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Roboto', sans-serif;
+            	line-height: 1.4;
+            	margin: 0 0;
+            }
+            em {
+            	color: #999;
+            }
+            p {
+            	font-size: 90%;
+            }
+            p:last-child {
+            	margin-bottom: 0;
+            }
+            
+            a {
+            	color: #2C85B1;
+            	text-decoration: none;
+            	font-weight: 400;
+            }
+            ul {
+            	margin-bottom: 0;
+            }
+            section {
+            	margin: 1em 0 1em;
+            }
+            blockquote {
+            	margin: 0;
+            	margin-bottom: 1em;
+            }
+            #resume {
+            	margin: 2em 2em 0 2.5em;
+            	max-width: 760px;
+            }
+            
+            /* Resume heading */
+            .heading header { 
+            
+            }
+            
+            .heading header h1 {
+            	font-size: 180%;
+            	margin: 0.5em 0;
+            	font-weight: 500;
+            }
+            
+            .heading header h2 {
+            	font-size: 140%;
+            	margin: 0;
+            	font-weight: 400;
+            }
+            
+            .heading header .contact .detail {
+            	margin: 0 1em 0 0;
+            }
+            
+            .profile {
+            	display: inline-block;
+            	margin: 0 1em 0 0;
+            }
+            
+            .profile:last-child {
+            	margin: 0;
+            }
+            
+            .profile strong,
+            .profile span {
+            	margin: 0 1em 0 0;
+            }
+            /* section / line breaks */
+            section h2 {
+            	font-size: 140%;
+            	margin: 0 0 .05em;
+            	text-transform: uppercase;
+            	color: #BC1B39;
+            	font-weight: 400;
+            }
+            
+            /* Experience items */
+            .item {
+            	margin: 0 0 1em;
+            	padding: 0 0 1em;
+            	border-bottom: 1px solid #F2EBEC;
+            }
+            
+            .item:last-child {
+            	border-bottom: none;
+            	margin-bottom: 0;
+            }
+            
+            
+            .item header h3 {
+            	margin: 0.2em 1em 0.2em 0;
+            	display: inline-block;
+            	font-weight: 500;
+            }
+            
+            .item header a {
+            	display: inline-block;
+            }
+            
+            .item .position {
+            	font-weight: 500;
+            	font-size: 100%;
+            	margin: 0.2em 1em 0.2em 0;
+            }
+            
+            .item .startDate,
+            .item .endDate {
+            	color: #6B6B6B;
+            }
+            
+            .item .highlights {
+            	list-style: square;
+            	font-size: 90%;
+            }
+            
+            /* skills */
+            #skills .item {
+            	margin: 0.5em 0;
+            	padding: 0 0 0.5em;
+            	font-size: 90%;
+            }
+            
+            #skills .item .name {
+            	font-weight: 500;
+            	display: inline-block;
+            	text-transform: uppercase;
+            	margin: 0 1em 0 0;
+            	width: 23%;
+            	vertical-align: top;
+            }
+            
+            #skills .item .keywords {
+            	display: inline-block;
+            	width: 70%;
+            	vertical-align: top;
+            }
+            
+            /* education */
+            #education .item {
+            	display: inline-block;
+            	vertical-align: top;
+            	width: 49.5%;
+            	border-bottom: 0;
+            }
+        </style>
+        <style media="print">
+            body {
+            			font-size: 12px;
+            			line-height: 1.0;
+            		}
+        </style>
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700'
+        rel='stylesheet' type='text/css'>
+    </head>
+    
+    <body>
+        <div id="resume">
+            <section class="heading">
+                <header>
+                    	<h1>B. Paul Anderson</h1>
+
+                    <div class="contact">	<span class="detail">
+					<a href="mailto:paul@andersonpaul.com">paul@andersonpaul.com</a>
+				</span>
+	<span class="detail">
+					1-817-262-9258
+				</span>
+	<span class="detail">
+					<a href="andersonpaul.com">andersonpaul.com</a>
+				</span>
+
+                    </div>
+                </header>
+                <p>Passionate newly-minted developer with a front-end focus, experienced
+                    in JavaScript development both with and without MVC frameworks.</p>
+                <div
+                class="profile">	<strong class="network">
+					GitHub
+				</strong>
+	<span class="username">
+					<a href="https://github.com/b-paul">b-paul</a>
+				</span>
+
+        </div>
+        <div class="profile">	<strong class="network">
+					Twitter
+				</strong>
+	<span class="username">
+					<a href="https://twitter.com/bpaulanderson">bpaulanderson</a>
+				</span>
+
+        </div>
+        <div class="profile">	<strong class="network">
+					LinkedIn
+				</strong>
+	<span class="username">
+					<a href="https://www.linkedin.com/in/b-paul-anderson">B. Paul Anderson</a>
+				</span>
+
+        </div>
+        </section>
+        <section id="skills">
+            	<h2>Skills</h2>
+
+            <div class="item">
+                <div class="name">Front End Web</div>
+                <div class="keywords">JavaScript, ES2015, HTML5, CSS, AngularJS, Node.js</div>
+            </div>
+            <div class="item">
+                <div class="name">Testing</div>
+                <div class="keywords">Mocha, Jasmine, Protractor, Karma</div>
+            </div>
+            <div class="item">
+                <div class="name">Build Tools</div>
+                <div class="keywords">Gulp, Webpack</div>
+            </div>
+            <div class="item">
+                <div class="name">Source Control</div>
+                <div class="keywords">Git, GitHub collaboration</div>
+            </div>
+        </section>
+        <section class="experience">
+            	<h2>Experience</h2>
+
+            <section class="item">
+                <header>
+                    	<h3 class="name">Thinkful</h3>
+
+                </header>	<span class="position">
+				Student
+			</span>
+	<span class="startDate">
+				Dec 2015
+			</span>
+	<span class="endDate">
+				- Apr 2016
+			</span>
+
+                <div class="summary">
+                    <p>Completed extended hands-on experience, working closely with a working
+                        engineer mentor to assemble and refine a portfolio of work that effectively
+                        demonstrates skill in web development.</p>
+                </div>
+            </section>
+            <section class="item">
+                <header>
+                    	<h3 class="name">GotPrint</h3>
+
+                </header>	<span class="position">
+				Quality Control Agent
+			</span>
+	<span class="startDate">
+				Mar 2012
+			</span>
+	<span class="endDate">
+				- Present
+			</span>
+
+                <div class="summary">
+                    <p>Sole quality control agent for a production plant shipping 2,500 boxes
+                        of marketing materials per day.</p>
+                </div>
+                <ul class="highlights">
+                    <li>Improved production quality, as measured by a 48% (41/mo to 21/mo) reduction
+                        in customer complaints during my tenure, by training teams to meet a consistent
+                        set of standards and providing active feedback through data.</li>
+                    <li>Taught self to use Python and SQL in order to create programs that compiled
+                        quality data over time, eliminating a biweekly four-hour report generation
+                        process.</li>
+                </ul>
+            </section>
+            <section class="item">
+                <header>
+                    	<h3 class="name">FedEx Office</h3>
+
+                </header>	<span class="position">
+				Lead Project Coordinator
+			</span>
+	<span class="startDate">
+				Jun 2008
+			</span>
+	<span class="endDate">
+				- Feb 2012
+			</span>
+
+                <div class="summary">
+                    <p>Earned multiple promotions from retail customer service to final role
+                        as shift-leading project coordinator. Trained my team in client consultations
+                        and technical competencies.</p>
+                </div>
+            </section>
+        </section>
+        <section id="education">
+            	<h2>Education</h2>
+
+            <div class="item">
+                <header>
+                    	<h3 class="name">The University of Texas at Arlington</h3>
+
+                </header>
+                <div class="dates">	<span class="endDate">
+					May 2009
+				</span>
+
+                </div>
+                <div class="qualification">	<span class="studyType">
+					Bachelor
+				</span>
+	<span class="area">
+					- Arts
+				</span>
+	<span class="gpa">
+					GPA: 3.75
+				</span>
+
+                </div>
+            </div>
+        </section>
+        </div>
+    </body>
+
+</html>
