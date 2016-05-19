@@ -1,0 +1,125 @@
+{
+  "name": "B. Paul Anderson",
+  "info": {},
+  "meta": {
+    "format": "FRESH@0.6.0",
+    "version": "0.1.0"
+  },
+  "location": {
+    "city": "Irving",
+    "region": "Texas",
+    "country": "US",
+    "code": "75062",
+    "address": "B. Paul Anderson\n3160 W Northgate Dr, #2017\nIrving, TX 75062"
+  },
+  "employment": {
+    "history": [
+      {
+        "position": "Student",
+        "employer": "Thinkful",
+        "summary": "Completed extended hands-on experience, working closely with a working engineer mentor to assemble and refine a portfolio of work that effectively demonstrates skill in web development.",
+        "start": "2015-12",
+        "end": "2016-04",
+        "url": "http://thinkful.com/",
+        "keywords": []
+      },
+      {
+        "position": "Quality Control Agent",
+        "employer": "GotPrint",
+        "summary": "Sole quality control agent for a production plant shipping 2,500 boxes of marketing materials per day.",
+        "current": true,
+        "start": "2012-03",
+        "url": "http://gotprint.com/",
+        "keywords": [],
+        "highlights": [
+          "Improved production quality, as measured by a 48% (41/mo to 21/mo) reduction in customer complaints during my tenure, by training teams to meet a consistent set of standards and providing active feedback through data.",
+          "Taught self to use Python and SQL in order to create programs that compiled quality data over time, eliminating a biweekly four-hour report generation process."
+        ]
+      },
+      {
+        "position": "Lead Project Coordinator",
+        "employer": "FedEx Office",
+        "summary": "Earned multiple promotions from retail customer service to final role as shift-leading project coordinator. Trained my team in client consultations and technical competencies.",
+        "start": "2008-06",
+        "end": "2012-02",
+        "url": "http://www.fedex.com/us/office/",
+        "keywords": []
+      }
+    ]
+  },
+  "education": {
+    "level": "",
+    "history": [
+      {
+        "institution": "The University of Texas at Arlington",
+        "end": "2009-05",
+        "grade": "3.75",
+        "summary": "",
+        "area": "Arts",
+        "studyType": "Bachelor"
+      }
+    ]
+  },
+  "skills": {
+    "sets": [
+      {
+        "name": "Front End Web",
+        "level": "advanced",
+        "skills": [
+          "JavaScript",
+          "ES2015",
+          "HTML5",
+          "CSS",
+          "AngularJS",
+          "Node.js"
+        ]
+      },
+      {
+        "name": "Testing",
+        "level": "proficient",
+        "skills": [
+          "Mocha",
+          "Jasmine",
+          "Protractor",
+          "Karma"
+        ]
+      },
+      {
+        "name": "Build Tools",
+        "level": "intermediate",
+        "skills": [
+          "Gulp",
+          "Webpack"
+        ]
+      },
+      {
+        "name": "Source Control",
+        "level": "intermediate",
+        "skills": [
+          "Git",
+          "GitHub collaboration"
+        ]
+      }
+    ]
+  },
+  "social": [
+    {
+      "label": "GitHub",
+      "network": "GitHub",
+      "url": "https://github.com/b-paul",
+      "user": "b-paul"
+    },
+    {
+      "label": "Twitter",
+      "network": "Twitter",
+      "url": "https://twitter.com/bpaulanderson",
+      "user": "bpaulanderson"
+    },
+    {
+      "label": "LinkedIn",
+      "network": "LinkedIn",
+      "url": "https://www.linkedin.com/in/b-paul-anderson",
+      "user": "B. Paul Anderson"
+    }
+  ]
+}

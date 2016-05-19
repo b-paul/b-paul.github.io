@@ -1,0 +1,44 @@
+B. Paul Anderson
+Email: paul@andersonpaul.com
+Tel: 1-817-262-9258
+Web: andersonpaul.com
+================================================================================
+
+Passionate newly-minted developer with a front-end focus, experienced in JavaScript development both with and without MVC frameworks.
+
+SKILLS -------------------------------------------------------------------------
+
+- Front End Web: JavaScript, ES2015, HTML5, CSS, AngularJS, Node.js 
+- Testing: Mocha, Jasmine, Protractor Karma 
+- Build Tools: Gulp, Webpack 
+- Source Control: Git, GitHub collaboration 
+
+EMPLOYMENT ---------------------------------------------------------------------
+
+Student, Thinkful (2015-12 — 2016-04)
+Completed extended hands-on experience, working closely with a working engineer mentor to assemble and refine a portfolio of work that effectively demonstrates skill in web development.
+
+Quality Control Agent, GotPrint (2012-03 — Present)
+Sole quality control agent for a production plant shipping 2,500 boxes of marketing materials per day.
+- Improved production quality, as measured by a 48% (41/mo to 21/mo) reduction in customer complaints during my tenure, by training teams to meet a consistent set of standards and providing active feedback through data.
+- Taught self to use Python and SQL in order to create programs that compiled quality data over time, eliminating a biweekly four-hour report generation process.
+
+Lead Project Coordinator, FedEx Office (2008-06 — 2012-02)
+Earned multiple promotions from retail customer service to final role as shift-leading project coordinator. Trained my team in client consultations and technical competencies.
+
+
+
+
+EDUCATION ----------------------------------------------------------------------
+
+The University of Texas at Arlington (2009-05)
+Degree program in English with a minor in linguistics.
+
+
+
+
+
+
+
+
+
