@@ -56,8 +56,7 @@ $gutter:           $spacing-unit;
 
 @import "base",
         "layout",
-        "syntax-highlighting",
-        "powertip";
+        "syntax-highlighting";
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $headings-font-family;
@@ -166,6 +165,10 @@ a:hover, a:visited {
     font-size: 29px;
     padding-bottom: 4px;
     border-bottom: 3px solid $brand-color-dark;
+}
+
+.skill-title {
+    font-family: $headings-font-family;
 }
 
 .project {
